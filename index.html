@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+   
+    
+    <style>
+
+</style>
+        
+</head>
+<body> 
+<!---start of topbar Navigation--->
+    <nav>
+          <div class="topnav">
+            <ul>
+            <li class="projects"> 
+                <div class="dropdown">
+                    <button class="dropbtn">Projects</button>
+                    <div class="dropdown-content"> 
+                    <a href="#">Building A</a>
+                    <a href="#">Building B</a>
+                    <a href="#">Building c</a>
+                    </div>
+                  </div>  
+            </li>
+            <li><a href="#" class="home">Home</a> </li>
+            <li>
+              <!--  Main Dropdown -->
+              <div class="dropdown">
+                <div class="dropbtn">Project Tools</div>
+                 <!--  Main Dropdown -->
+                 <!--Secondary dropdown-->
+                <div class="dropdown-content">
+                  <div id="link1" class="dropbtn" href="#">Core Tools
+                    <!--  Inside Dropdown -->
+                    <div class="dropdown-two">
+                      <div class="dItem" id="file" href="#">
+                          <a href="index.html">Home</a>
+                          <a href="Coretools/Email.html">Email</a>
+                          <a href="Coretools/Reports.html">Reports</a>
+                          <a href="Coretools/Documents.html">Documents</a>
+                          <a href="Coretools/Directory.html">Directory</a>
+                          <a href="Coretools/Task.html">Task</a>
+                         
+                      </div>
+                    </div>
+                  </div>
+                   <!--Secondary dropdown-->
+                  <div class="dropdown-content">
+                    <div id="link1" class="dropbtn" href="#">Project Management
+                      <!--  Inside Dropdown -->
+                      <div class="dropdown-two">
+                        <div class="dItem" id="file" href="#">
+                            <a href="Project Panagement/RFI.html">Requests For Informations</a>
+                            <a href="Project Panagement/Submittals.html">Submittals</a>
+                            <a href="Project Panagement/Site_instructions.html">Site Instructions</a>
+                            <a href="Project Panagement/Transmittals.html">Transmittals</a>
+                            <a href="Project Panagement/Inspections.html">Inspections</a>
+                            <a href="Project Panagement/Observations.html">Observations</a>
+                            <a href="Project Panagement/Meetings.html">Meetings</a>
+                        </div>
+                      </div>
+                    </div>
+                     <!--Secondary dropdown-->
+                    <div class="dropdown-content">
+                      <div id="link1" class="dropbtn" href="#">Construction Maanagement
+                        <!--  Inside Dropdown -->
+                        <div class="dropdown-two">
+                          <div class="dItem" id="file" href="#">
+                              <a href="Construction Management/Schedule.html">Schedule</a>
+                              <a href="Construction Management/daily_logs.html">Daily Logs</a>
+                              <a href="Construction Management/Photos.html">Photos</a>
+                              <a href="Construction Management/Plans.html">Drawings</a>
+                              <a href="Construction Management/Invetories.html">Inventories</a>
+                              <a href="Construction Management/Specifications.html">Specifications</a>
+                              <a href="Construction Management/Forms.html">Forms</a>
+                          </div>
+                        </div>
+                      </div>   
+            </li>
+            <!---End of Drop down-->
+            <li> <form class="d-flex">
+                <input class="form-control search_bar me-3"  type="text" style="height: 30px;" placeholder="Search.....  ">              
+              </form> </li>
+            <li class="Notifications"> <a href="#">Notifications</a></li>
+            <li class="projects"> 
+              <div class="dropdown">
+                  <button class="dropbtn"><img src="page1/building5.jpg" width="60px" style="border-radius: 50%;" alt=""></button>
+                  <div class="dropdown-content">              
+                  
+
+                    <!---start of offcanvas account settings-->
+                    <a class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                      Settings
+                    </a>
+                    <div class="offcanvas offcanvas-end" id="demo">
+                      <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Account Settings</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                      </div>
+                      <div class="offcanvas-body"> <!----delete / in action_page-->
+                        <form action="action_page.php" style="border:1px solid #ccc">
+                          <div class="container accountsetting">
+                           
+                            <p>Please fill in this form to reset password and Email.</p>
+                            <hr>
+                            
+                                <label for="email"><b>Current Email</b></label>
+                            <input type="text" placeholder="Enter Current Email" name="email" required>
+                            
+                                <label for="email"><b>New Email</b></label>
+                            <input type="text" placeholder="Enter New Email" name="email" required>
+                        
+                           
+                        
+                            <label for="psw"><b>Current Password</b></label>
+                            <input type="password" placeholder="Enter Current Password" name="psw" required>
+                            
+                             <label for="psw-repeat"><b>New Password</b></label>
+                            <input type="password" placeholder="Enter New Password" name="psw-repeat" required>
+                            
+                            <label>
+                        
+                            <label for="psw-repeat"><b>Confirm Password</b></label>
+                            <input type="password" placeholder="Confirm New Password" name="psw-repeat" required>
+                            
+                            <label>
+                        
+                            
+                            <p>By resetting your password and email adresss <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                        
+                            <div class="clearfix accountset">
+                              
+                              <button type="submit" account-setting class="signupbtn Changepassword">Change Password and Email</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!---End of offcanvas-->
+                  
+                  
+
+
+                      <!---offcanvas account -info start-->
+                  <a href="#">
+                    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Account</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                     <h5 id="offcanvasRightLabel">Profile Account</h5>
+                    <button type="button" class="btn-close text-reset bg-secondary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <!---account info-->
+                      <div class="author-card pb-3">
+                        <div class="author-card-cover" style="background-image: url(https://i.pinimg.com/564x/8b/41/fd/8b41fdf95b53fdabb02a03703fb9c56d.jpg);"><a class="btn btn-style-1 btn-white btn-sm" href="#" data-toggle="tooltip" title="" data-original-title="You currently have 290 Reward points to spend">
+                        </div>
+                        <div class="author-card-profile">
+                            <div class="author-card-avatar"><img src="https://i.pinimg.com/564x/8b/41/fd/8b41fdf95b53fdabb02a03703fb9c56d.jpg" alt="name">
+                            </div>
+                            <div class="author-card-details">
+                                <h5 class="author-card-name text-lg">Bryan Dave Aguilar</h5><span class="author-card-position">Joined September 2023</span>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="wizard">
+                        <nav class="list-group list-group-flush">
+                            <a class="list-group-item active" href="#"> </a>
+                            <a class="list-group-item" href="#" target="__blank"><i class="fa fa-user text-muted"></i>Email Adress: bda@gmail.com</a>
+
+                            <a class="list-group-item" href="#"><i class="fa fa-map-marker text-muted"></i>Mobile Number: 09123456789 </a>
+
+                            <a class="list-group-item" href="#"><i class="fa fa-map-marker text-muted"></i>about weradswnfjdsjndsf</a>   
+                            <br>
+                            <br>
+                       
+                          
+                          <a href="/Login/login.html" style="background-color: rgb(216, 101, 101);
+                          font-size: larger; font-weight: bolder;">Sign out </a>
+                          </div>                           
+                        </nav>
+                    </div>                  
+                  </a>  
+                    <!----offcanvas account end-->   
+          </li>
+    </nav> 
+    
+    
+    
+    <!---End of nav bar-->     
+      <div class="row">
+
+        
+        <div class="rightcolumn">
+
+          <!---Date and Time-->
+          <div class="date_time">
+            <h3>Current date and time:</h3>
+            <span id="day" style="font-size: 1.5rem;"></span><br>
+            <span id="datetime" style="font-size: 1.2rem;"></span>
+
+        
+            <script>
+              // create a function to update the date and time
+              function updateDateTime() {
+                // create a new `Date` object
+                const now = new Date();
+
+                 //for the day
+                 const d = new Date();
+                const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        
+                // get the current date and time as a string
+                const currentDateTime = now.toLocaleString();
+        
+                // update the actual date,day and time
+                document.querySelector('#datetime').textContent = currentDateTime;
+                document.querySelector('#day').textContent = weekday[d.getDay()];
+              }
+        
+              // call the `updateDateTime` function every second
+              setInterval(updateDateTime, 1000);
+            </script>
+          </div>
+
+          <!---Project Info-adress-->
+          <div class="card">
+            <h2>Project Adress</h2>
+            
+            <p>9th Ave. Cor 28th St. Bonifacio Global City, Taguig City
+                Taguig, City, National Capital Region 1635
+                Philippines</p>
+          </div>
+          <div class="card">
+            <h3>Project Photo</h3>
+            <div><img src="https://i.pinimg.com/564x/8b/41/fd/8b41fdf95b53fdabb02a03703fb9c56d.jpg" alt="" width="100%"  height="400"></div>
+          </div>
+          <div class="card">
+            <h3>Project Info</h3>
+            <p>Building construction is the process of adding structure to real property. The vast majority of building construction projects are small renovations, such as the addition of a room, or renovation of a bathroom. Often, the owner of the property acts as a laborer, paymaster, and design team for the entire project.</p>
+          </div>
+
+           <!---Start of chart-->
+
+          <div class="card">
+            <h3>Project Info</h3>
+            <h2>Progress Chart Per Year</h2>
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            
+            <script>
+            const xValues = [2019,2020,2022,2023,2024,2025];
+            const yValues = [0,19,26,44,59,100];
+            
+            new Chart("myChart", {
+              type: "line",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  fill: false,
+                  lineTension: 0,
+                  backgroundColor: "red",
+                  borderColor: "rgba(0,0,255,0.1)",
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                scales: {
+                  yAxes: [{ticks: {min: 0, max:100}}],
+                }
+              }
+            });
+            </script>
+        </div>
+        <!---End of chart-->
+        </div>
+
+       
+      
+
+<!---- Main content-->
+        <div class="leftcolumn">
+
+          <!---start of Project Team/Directory-->
+          <div class="card">
+            <h2>Building A</h2> 
+            <h5>Project Team/ Directory</h5>
+            <div class="container mt-3">
+                <div class="table-responsive">
+                  <table class="table table-bordered" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th>Company</th>
+                        <th>Designation</th>
+                        <th>Fullname</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                      <tr>
+                        <td>BDA</td>
+                        <td>Project Engineer</td>
+                        <td>Bryan Dave Aguilar</td>
+                        <td>bda1997@gmail.com</td>
+                        <td>091234567890</td>
+                      </tr>
+                  
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
+          </div>
+
+          <!---Project ovierview (Consist of progress bars)-->
+          <div class="card">
+            <h2>Project Overview</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="container mt-3">                            
+                <div class="table-responsive-sm">          
+                <table class="table table-bordered" style="text-align: center;">
+                  <thead>
+                    <tr>
+                      <th>Overview</th>
+                      <th style="width: 90%;">Legend</th>
+                      <th>Total Open</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>RFI</td>
+                      <td><div class="progress" >
+                        <div class="progress-bar bg-success" style="width:50%" >
+                          50
+                        </div>
+                        <div class="progress-bar bg-warning" style="width:10%">
+                         10
+                        </div>
+                        <div class="progress-bar bg-danger" style="width:20%">
+                          20
+                        </div></td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Submittals</td>
+                        <td><div class="progress" >
+                          <div class="progress-bar bg-success" style="width:15%" >
+                            15
+                          </div>
+                          <div class="progress-bar bg-warning" style="width:30%">
+                           30
+                          </div>
+                          <div class="progress-bar bg-danger" style="width:45%">
+                            45
+                          </div></td>
+                        <td>1000</td>
+                      </tr>
+                      <tr>
+                        <td>Schedule</td>
+                        <td><div class="progress" >
+                          <div class="progress-bar bg-success" style="width:40%" >
+                            40
+                          </div>
+                          <div class="progress-bar bg-warning" style="width:20%">
+                           20
+                          </div>
+                          <div class="progress-bar bg-danger" style="width:35%">
+                            35
+                          </div></td>
+                        <td>1000</td>
+                      </tr>
+                      <tr>
+                        <td>Inspections</td>
+                        <td><div class="progress" >
+                          <div class="progress-bar bg-success" style="width:70%" >
+                            60
+                          </div>
+                          <div class="progress-bar bg-warning" style="width:10%">
+                           10
+                          </div>
+                          <div class="progress-bar bg-danger" style="width:25%">
+                            25
+                          </div></td>
+                        <td>1000</td>
+                      </tr>
+                      <tr>
+                        <td>Observations</td>
+                        <td><div class="progress" >
+                          <div class="progress-bar bg-success" style="width:50%" >
+                            50
+                          </div>
+                          <div class="progress-bar bg-warning" style="width:15%">
+                           15
+                          </div>
+                          <div class="progress-bar bg-danger" style="width:27%">
+                            27
+                          </div></td>
+                        <td>1000</td>
+                      </tr>
+                      <tr>
+                        <td>Meetings</td>
+                        <td><div class="progress" >
+                          <div class="progress-bar bg-success" style="width:20%" >
+                            20
+                          </div>
+                          <div class="progress-bar bg-warning" style="width:60%">
+                           60
+                          </div>
+                          <div class="progress-bar bg-danger" style="width:10%">
+                            10
+                          </div></td>
+                        <td>1000</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td><div class="progress" >
+                          <div class="progress-bar bg-success" style="width:20%" >
+                            20
+                          </div>
+                          <div class="progress-bar bg-warning" style="width:60%">
+                           60
+                          </div>
+                          <div class="progress-bar bg-danger" style="width:10%">
+                            10
+                          </div></td>
+                        <td>1000</td>
+                      </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+          </div>
+
+         <!---Start of Progress bars (Table)--> 
+
+          <div class="card">
+            <h2>My Open Items</h2>
+            <div class="container mt-3">                            
+                <div class="table-responsive-sm">          
+                <table class="table table-bordered" style="text-align: center;">
+                  <thead>
+                    <tr>
+                      <th>Item Type</th>
+                      <th style="width: 70%;">Details</th>
+                      <th>Status</th>
+                      <th>Due Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Inspections</td>
+                      <td> Electrical Meager Test</td>
+                      <td> Open</td>
+                      <td>01-01-2024</td>
+                    </tr>
+                    <tr>
+                        <td>Inspections</td>
+                        <td> Water Flow Test</td>
+                        <td> Open</td>
+                        <td>01-01-2024</td>
+                      </tr>
+       
+                      <tr>
+                        <td>Submittal</td>
+                        <td> Skim Coat Applications</td>
+                        <td> Open</td>
+                        <td>01-01-2024</td>
+                      </tr>
+       
+                      <tr>
+                        <td>Meeting</td>
+                        <td> December 23,2023 - Uwian sa Probinsya</td>
+                        <td> Open</td>
+                        <td>01-01-2024</td>
+                      </tr>  
+                  </tbody>
+                </table>
+                </div>
+              </div>
+          </div> 
+
+          <!--Start of Project Milestone-->
+          <div class="card">
+            <h2>Project MileStone</h2>
+            <div class="container mt-3">                            
+                <div class="table-responsive-sm">          
+                <table class="table table-bordered" style="text-align: center;">
+                  <thead>
+                    <tr>
+                      <th>Item Type</th>
+                      <th style="width: 70%;">Details</th>
+                      <th>Status</th>
+                      <th>Due Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>201 File</td>
+                      <td> Building 1 Updating File (07 07 23) - July 07 DD(95.05%) ... START OF CCO/FCO</td>
+                      <td> Closed</td>
+                      <td>01-01-2024</td>
+                    </tr>
+                    <tr>
+                        <td>Building Update</td>
+                        <td> Building 1 Updating File (07 07 23) - July 07 DD(95.05%) ... Permanent Water</td>
+                        <td> Closed</td>
+                        <td>01-01-2024</td>
+                      </tr>
+       
+                      <tr>
+                        <td>OPR</td>
+                        <td>Building 1 Updating File (07 07 23) - July 07 DD(95.05%) ... Permanent Electricity</td>
+                        <td> Closed</td>
+                        <td>01-01-2024</td>
+                      </tr>
+       
+                      <tr>
+                        <td>Project Update</td>
+                        <td> Building 1 Updating File (07 07 23) - July 07 DD(95.05%) ... SERVICE ELEVATOR - SE 1/PE 3</td>
+                        <td> Closed</td>
+                        <td>01-01-2024</td>
+                      </tr>  
+                  </tbody>
+                </table>
+                </div>
+              </div>
+          </div>   
+        </div>
+      </div>
+
+      <div class="footer">
+      
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #929fba"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              ConsSyst
+            </h6>
+            <p>
+              Achieve faster results for every project milestone with custom features like timesheets. An agile project management tool designed to support the entire project life cycle.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-white">Construction</a>
+            </p>
+            <p>
+              <a class="text-white">Construction Management</a>
+            </p>
+            <p>
+              <a class="text-white">Quality and Safety</a>
+            </p>
+            <p>
+              <a class="text-white">Design</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> 9th Ave. Cor 28th St. Bonifacio Global City, Taguig City Taguig, City, National Capital Region 1635 Philippines</p>
+            <p><i class="fas fa-envelope mr-3"></i> ConsSyst@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            
+          </div>
+          <!-- Grid column -->
+
+         
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="#"
+         >ConsSyst.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+      </div>
+
+</body>
+</html>
